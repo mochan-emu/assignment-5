@@ -10,7 +10,7 @@ public class CardApp
 
 		Card c = new Card(10, Card.Suit.Heart);
 		System.out.println(c.getSuitSymbol());
-		c.setSuit(Card.Suit.Club);
+		c.setSuit(Card.getSuitFromIndex(3));
 		System.out.println(c.getSuitSymbol());
 	}
 }

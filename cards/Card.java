@@ -1,5 +1,7 @@
 package cards;
 
+import cards.Card.Suit;
+
 public class Card 
 {
 	// Suit of the card
@@ -56,5 +58,10 @@ public class Card
 		default:
 			return "";
 		}
+	}
+
+	public static Suit getSuitFromIndex(int i) 
+	{
+		return Suit.values()[i];
 	}
 }
